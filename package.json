@@ -1,10 +1,10 @@
 {
-  "name": "hexo-minifier-esbuild",
-  "version": "0.1.2",
+  "name": "esbuild-hexo-minifier",
+  "version": "0.1.1",
   "description": "Hexo minifier based on esbuild.",
   "main": "dist/index.js",
   "bin": {
-    "hexo-minifier-esbuild": "dist/index.js"
+    "esbuild-hexo-minifier": "dist/index.js"
   },
   "scripts": {
     "build": "tsup"
