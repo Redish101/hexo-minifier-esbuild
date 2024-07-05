@@ -8,7 +8,7 @@
 npm install @redish101/hexo-esbuild
 ```
 
-修改`package.json`修改`scripts`字段：
+修改`package.json`中的`scripts`字段：
 
 ```json
 "scripts": {
