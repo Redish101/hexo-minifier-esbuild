@@ -1,0 +1,27 @@
+{
+  "name": "hexo-minifier-esbuild",
+  "version": "0.1.0",
+  "description": "Hexo minifier based on esbuild.",
+  "main": "dist/index.js",
+  "bin": {
+    "hexo-minifier-esbuild": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "keywords": [],
+  "author": "Redish101 <i@redish101.top>",
+  "license": "MIT",
+  "dependencies": {
+    "esbuild": "^0.23.0",
+    "esbuild-plugin-swc": "^1.0.1",
+    "html-minifier": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/html-minifier": "^4.0.5",
+    "@types/node": "^20.14.9",
+    "esbuild": "^0.23.0",
+    "tsup": "^8.1.0",
+    "typescript": "^5.5.3"
+  }
+}
