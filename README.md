@@ -2,7 +2,7 @@
 
 > 使用`esbuild`压缩你的静态资源。
 
-## 安装 
+## 安装
 
 ```bash
 npm install hexo-minifier-esbuild
@@ -24,3 +24,11 @@ npm install hexo-minifier-esbuild -g
 ```
 
 然后在每次执行`hexo generate`后执行`hexo-minifier-esbuild`。
+
+## 支持压缩的资源
+
+- html
+- css
+- js
+- 图片
+- 字体

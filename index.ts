@@ -1,8 +1,16 @@
+/**
+ * Hexo Minifier Esbuild
+ * Use esbuild to minify your files in Hexo public directory.
+ * @author Redish101 <i@redish101.top>
+ * @license MIT
+ */
+
 import fs from "fs/promises";
 import path from "path";
 import esbuild from "esbuild";
-import { swcPlugin } from 'esbuild-plugin-swc'
+import { swcPlugin } from "esbuild-plugin-swc";
 import htmlMinifier from "html-minifier";
+import Fontmin from "fontmin";
 
 const extensions = [".html", ".js", ".css"];
 const publicDir = "./public";
@@ -54,6 +62,20 @@ async function processFiles(dirPath: string) {
           });
           await fs.writeFile(filePath, minifiedData, "utf-8");
           console.log(`${filePath} minified`);
+        } else if (ext === ".ttf" || ext === ".otf") {
+          const fontmin = new Fontmin();
+          const destPath = path.dirname(filePath);
+          fontmin.src(filePath).dest(destPath);
+          await new Promise((resolve, reject) => {
+            fontmin.run((err, files) => {
+              if (err) {
+                reject(err);
+              } else {
+                resolve(files);
+                console.log(`${filePath} compressed`);
+              }
+            });
+          });
         }
       }
     }
