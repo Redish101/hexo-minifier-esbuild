@@ -13,7 +13,7 @@ npm install @redish101/hexo-esbuild
 ```json
 "scripts": {
   "build": "hexo generate && hexo-minifier-esbuild"
-  // .......
+  // 其余脚本
 }
 ```
 
