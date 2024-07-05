@@ -5,9 +5,22 @@
 ## 安装 
 
 ```bash
+npm install @redish101/hexo-esbuild
+```
+
+修改`package.json`修改`scripts`字段：
+
+```json
+"scripts": {
+  "build": "hexo generate && hexo-minifier-esbuild"
+  // .......
+}
+```
+
+当然，您也可以全局安装：
+
+```bash
 npm install @redish101/hexo-esbuild -g
 ```
 
-## 配置
-
-在执行`hexo generate`命令后，执行`hexo-minifier-esbuild`。
+然后在每次执行`hexo generate`后执行`hexo-minifier-esbuild`。
