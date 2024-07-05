@@ -5,7 +5,7 @@
 ## 安装 
 
 ```bash
-npm install @redish101/hexo-esbuild
+npm install hexo-minifier-esbuild
 ```
 
 修改`package.json`中的`scripts`字段：
@@ -20,7 +20,7 @@ npm install @redish101/hexo-esbuild
 当然，您也可以全局安装：
 
 ```bash
-npm install @redish101/hexo-esbuild -g
+npm install hexo-minifier-esbuild -g
 ```
 
 然后在每次执行`hexo generate`后执行`hexo-minifier-esbuild`。
