@@ -6,5 +6,5 @@ export default defineConfig({
   target: "node18",
   clean: true,
   bundle: true,
-  external: ["esbuild", "esbuild-plugin-swc"],
+  external: ["esbuild", "esbuild-plugin-swc", "html-minifier"],
 });
