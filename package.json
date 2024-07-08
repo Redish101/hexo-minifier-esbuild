@@ -15,11 +15,11 @@
   "dependencies": {
     "esbuild": "^0.23.0",
     "esbuild-plugin-swc": "^1.0.1",
-    "html-minifier": "^4.0.0",
-    "fontmin": "^1.1.0"
+    "fontmin": "^1.1.0",
+    "html-minifier-terser": "^7.2.0"
   },
   "devDependencies": {
-    "@types/html-minifier": "^4.0.5",
+    "@types/html-minifier-terser": "^7.0.2",
     "@types/node": "^20.14.9",
     "typescript": "^5.5.3"
   }
