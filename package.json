@@ -1,6 +1,6 @@
 {
   "name": "esbuild-hexo-minifier",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Hexo minifier based on esbuild.",
   "main": "index.js",
   "bin": {
