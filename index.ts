@@ -34,7 +34,12 @@ async function processFiles(dirPath: string) {
             minify: true,
             write: true,
             allowOverwrite: true,
-            plugins: [swcPlugin()],
+            plugins: [swcPlugin({
+              module: {
+                strictMode: false,
+                type: "umd" 
+              }
+            })],
           });
           console.log(`${filePath} minified`);
         } else if (ext === ".css") {
