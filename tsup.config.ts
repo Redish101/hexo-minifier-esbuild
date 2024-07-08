@@ -5,6 +5,6 @@ export default defineConfig({
   minify: true,
   target: "node18",
   clean: true,
-  bundle: false,
+  bundle: true,
   external: ["esbuild", "esbuild-plugin-swc", "html-minifier", "font-min"],
 });
